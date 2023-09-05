@@ -13,7 +13,7 @@ export async function POST(request) {
             let Cookie = await createTokenCookie(email);
             return NextResponse.json(
                 { status: "success", message: "Request completed" },
-                { status: 200, }
+                { status: 200, headers: Cookie }
             );
         } else {
             return NextResponse.json(
