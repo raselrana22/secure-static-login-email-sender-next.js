@@ -2,12 +2,17 @@
 
 import { NextResponse } from 'next/server';
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation'
 
 export default function Login() {
+    const router = useRouter();  // for 
+
     const [email, setEmail] = useState('rasel.learn22@gmail.com');
     const [password, setPassword] = useState('123');
 
     const handleSubmit = async (e) => {
+
+
         e.preventDefault();
         if (email.length === 0) {
             alert("Email Required");
@@ -33,6 +38,7 @@ export default function Login() {
                 const token = jsonResponse.tokenValue;
                 // emailSend(email, token);
                 alert("Login success");
+                router.replace('/home') // Go to the user home page
             } else {
                 alert(jsonResponse.message);
             }
