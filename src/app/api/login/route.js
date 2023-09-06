@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createTokenCookie } from "@/app/lib/create-token-cookie";
+import extractTokenFromCookieObject from "@/app/lib/extract-token-value"
 
 // This function for login
 export async function POST(request) {
@@ -10,10 +11,12 @@ export async function POST(request) {
 
         // Data Checking 
         if (email === "rasel.learn22@gmail.com" && password === "123") {
-            let Cookie = await createTokenCookie(email);
+            let cookieObject = await createTokenCookie(email);
+            const token = extractTokenFromCookieObject(cookieObject);
+
             return NextResponse.json(
-                { status: "success", message: "Request completed" },
-                { status: 200, headers: Cookie }
+                { status: "success", tokenValue: token, message: "Request completed" },
+                { status: 200, headers: cookieObject }
             );
         } else {
             return NextResponse.json(

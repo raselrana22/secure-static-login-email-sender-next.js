@@ -29,7 +29,8 @@ export default function Login() {
 
             const jsonResponse = await response.json();
             if (jsonResponse.status === 'success') {
-                emailSend(email);
+                const token = jsonResponse.tokenValue;
+                emailSend(email, token);
                 alert("Login success");
             } else {
                 alert(jsonResponse.message);
@@ -42,7 +43,7 @@ export default function Login() {
     };
 
 
-    const emailSend = async (email) => {
+    const emailSend = async (email, token) => {
         try {
             const response = await fetch('/api/email', {
                 method: 'POST', // Use POST method for sending data
@@ -51,7 +52,7 @@ export default function Login() {
                 },
                 body: JSON.stringify({ // Convert data to JSON format
                     email: email,
-                    token: "this is my dummy token",
+                    token: token,
                 }),
             });
 
