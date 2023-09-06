@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { verifyToken } from "./jwt-manager";
 
-
 export async function verifyTokenCookie(request) {
     try {
         const token = request.cookies.get('token');
