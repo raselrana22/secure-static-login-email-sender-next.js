@@ -39,11 +39,6 @@ export async function createToken(email) {
  * @throws {Error} If there is an issue verifying or decoding the JWT.
  */
 export async function verifyToken(token) {
-    // Validate the token parameter
-    if (!token || typeof token !== 'string') {
-        throw new Error('Invalid token parameter');
-    }
-
     try {
         const secret = new TextEncoder().encode(process.env.JWT_SECRET);
         const decoded = await jwtVerify(token, secret);

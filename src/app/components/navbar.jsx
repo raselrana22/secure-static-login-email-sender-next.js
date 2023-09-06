@@ -5,7 +5,9 @@ export default function NavBar() {
   return (
     <div className='navbar bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
       <div className='flex-1'>
-        <a className='btn btn-ghost normal-case text-xl'>daisyUI</a>
+        <Link href={"/home"}>
+          <p className='btn btn-ghost normal-case text-xl'>My Home</p>
+        </Link>
       </div>
       <div className='flex-none gap-2'>
         <div className='form-control'>
@@ -31,15 +33,29 @@ export default function NavBar() {
             className='mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52'
           >
             <li>
-              <p>Profile</p>
-            </li>
-            <li>
-              <Link href={"/login"}>
-                <p>Login</p>
+              <Link href={"/home"}>
+                <p>Home</p>
               </Link>
             </li>
             <li>
-              <p>Logout</p>
+              <Link href={"/profile"}>
+                <p>Profile</p>
+              </Link>
+            </li>
+            <li>
+              <Link href={"/contact"}>
+                <p>Contact</p>
+              </Link>
+            </li>
+            <li>
+              <Link href={"/about"}>
+                <p>About</p>
+              </Link>
+            </li>
+            <li>
+              <Link href={"/logout"}>
+                <p>Logout</p>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 'use client'
 
+import { NextResponse } from 'next/server';
 import React, { useState } from 'react';
 
 export default function Login() {
