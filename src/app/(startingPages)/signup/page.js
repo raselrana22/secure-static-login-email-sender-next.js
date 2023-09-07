@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react';
+import Link from 'next/link'; // Import Link from next/link
 
 export default function Signup() {
     const [email, setEmail] = useState('');
@@ -50,6 +51,13 @@ export default function Signup() {
                             </button>
                         </div>
                     </form>
+                    {/* Notice to go to the login page */}
+                    <div className="mt-4 text-center text-gray-600">
+                        Already have an account?{' '}
+                        <Link href="/login">
+                            <p className="text-blue-500 hover:underline">Log in here</p>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

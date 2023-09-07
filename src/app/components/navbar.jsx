@@ -6,7 +6,7 @@ export default function NavBar() {
     <div className='navbar bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
       <div className='flex-1'>
         <Link href={"/home"}>
-          <p className='btn btn-ghost normal-case text-xl'>My Home</p>
+          <p className='pl-5 text-xl'>My Home</p>
         </Link>
       </div>
       <div className='flex-none gap-2'>

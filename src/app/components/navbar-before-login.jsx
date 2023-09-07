@@ -5,7 +5,7 @@ export default function NavbarBeforeLogin() {
   return (
     <div className='navbar bg-gradient-to-r from-cyan-500 to-blue-500 pr-6'>
       <div className='flex-1'>
-        <a className='btn btn-ghost normal-case text-xl'>Welcome</a>
+        <a className='text-xl pl-5'>Welcome</a>
       </div>
       <div className='flex-none gap-2'>
         <div className='dropdown dropdown-end'>
