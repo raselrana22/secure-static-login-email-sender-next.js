@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation'
+import Link from 'next/link';
 
 export default function Login() {
     const router = useRouter();  // for 
@@ -113,6 +114,12 @@ export default function Login() {
                             >
                                 Login
                             </button>
+                        </div>
+                        <div className="mt-2 text-center text-gray-600">
+                            {`Don't have an account? `}
+                            <Link href="/signup">
+                                <p className="text-blue-500 hover:underline">Sign up here</p>
+                            </Link>
                         </div>
                     </form>
                 </div>
