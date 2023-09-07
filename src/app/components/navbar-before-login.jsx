@@ -39,7 +39,7 @@ export default function NavbarBeforeLogin() {
               </Link>
             </li>
             <li>
-              <Link href={"/welcome"}>
+              <Link href={"/notice"}>
                 <p>About</p>
               </Link>
             </li>
