@@ -6,7 +6,7 @@ export default function NavBar() {
     <div className='navbar bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
       <div className='flex-1'>
         <Link href={"/home"}>
-          <p className='pl-5 text-xl'>My Home</p>
+          <p className='pl-5 text-xl'>Tech. Education</p>
         </Link>
       </div>
       <div className='flex-none gap-2'>
@@ -21,7 +21,7 @@ export default function NavBar() {
           <label tabIndex={0} className='btn btn-ghost btn-circle avatar'>
             <div className='w-10 rounded-full'>
               <Image
-                src={"/image/placeholder-image-jpg.png"}
+                src={"/image/user.png"}
                 width={100}
                 height={100}
                 alt='placeholder'
