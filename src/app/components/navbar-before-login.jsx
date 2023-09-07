@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function LoginBeforeNavBar() {
+export default function NavbarBeforeLogin() {
   return (
-    <div className='navbar bg-lime-300 pr-6'>
+    <div className='navbar bg-gradient-to-r from-cyan-500 to-blue-500 pr-6'>
       <div className='flex-1'>
         <a className='btn btn-ghost normal-case text-xl'>Welcome</a>
       </div>
@@ -21,29 +21,24 @@ export default function LoginBeforeNavBar() {
           </label>
           <ul
             tabIndex={0}
-            className='mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-current rounded-box w-52'
+            className='mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52'
           >
-            <li className='text-white font-bold'>
+            <li>
               <Link href={"/welcome"}>
                 <p>Home</p>
               </Link>
             </li>
-            <li className='text-white font-bold'>
+            <li>
+              <Link href={"/signup"}>
+                <p>SignUp</p>
+              </Link>
+            </li>
+            <li>
               <Link href={"/login"}>
                 <p>Login</p>
               </Link>
             </li>
-            <li className='text-white font-bold'>
-              <Link href={"/welcome"}>
-                <p>Profile</p>
-              </Link>
-            </li>
-            <li className='text-white font-bold'>
-              <Link href={"/welcome"}>
-                <p>Contact</p>
-              </Link>
-            </li>
-            <li className='text-white font-bold'>
+            <li>
               <Link href={"/welcome"}>
                 <p>About</p>
               </Link>

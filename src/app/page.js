@@ -3,7 +3,7 @@
 
 import { usePathname } from 'next/navigation'
 import Welcome from './(startingPages)/welcome/page';
-import LoginBeforeNavBar from './components/login-before-navbar';
+import LoginBeforeNavBar from './components/navbar-before-login';
 
 export default function Home() {
 

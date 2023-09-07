@@ -1,7 +1,7 @@
 export default function MyHome() {
     return (
-        <div>
-            <div>This is the home page</div>
+        <div className="w-full h-screen bg-slate-300">
+            This is home page
         </div>
     )
 }

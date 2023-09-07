@@ -24,25 +24,27 @@ export default function LogoutConfirmation() {
 
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
-            <div className="bg-white p-8 shadow-md rounded-lg">
-                <h2 className="text-2xl font-semibold mb-4">Logout Confirmation</h2>
-                <p className="text-gray-700 mb-4">
-                    Are you sure you want to logout? You will be redirected to the login page.
-                </p>
-                <div className="flex justify-between">
-                    <button
-                        onClick={handleCancelLogout}
-                        className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400 transition duration-300"
-                    >
-                        Cancel
-                    </button>
-                    <button
-                        onClick={handleConfirmLogout}
-                        className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300"
-                    >
-                        Logout
-                    </button>
+        <div className="w-full h-screen">
+            <div className="min-h-screen flex items-center justify-center bg-slate-300">
+                <div className="bg-white p-8 shadow-md rounded-lg">
+                    <h2 className="text-2xl font-semibold mb-4">Logout Confirmation</h2>
+                    <p className="text-gray-700 mb-4">
+                        Are you sure you want to logout? You will be redirected to the login page.
+                    </p>
+                    <div className="flex justify-between">
+                        <button
+                            onClick={handleCancelLogout}
+                            className="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400 transition duration-300"
+                        >
+                            Cancel
+                        </button>
+                        <button
+                            onClick={handleConfirmLogout}
+                            className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300"
+                        >
+                            Logout
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

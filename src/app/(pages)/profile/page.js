@@ -1,5 +1,7 @@
 export default function Profile() {
     return (
-        <div>This is the profile page</div>
+        <div className='w-full h-screen bg-slate-300'>
+            This is the profile page
+        </div>
     )
 }
