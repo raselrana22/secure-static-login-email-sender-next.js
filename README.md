@@ -1,7 +1,7 @@
 # Secure Static Login and Email sender
 
 Welcome to the Static Login and Email sender!
-This is a [Static Login and Email sender](https://simple-blog-application-orpin.vercel.app/home) project. This project is developed using [Next.js 13](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) and Im design this website like a one-stop destination for online learning and tech-related courses!
+This is a [Static Login and Email sender](https://secure-login-eight.vercel.app/) project. This project is developed using [Next.js 13](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) and Im design this website like a one-stop destination for online learning and tech-related courses!
 
 ## Table of Contents
 
@@ -9,7 +9,9 @@ This is a [Static Login and Email sender](https://simple-blog-application-orpin.
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
+- [Contributing](#Contributing)
+- [Deploy on vercel](#Deploy-on-vercel)
+- [Contact](#Contact)
 
 ## About
 
@@ -71,7 +73,7 @@ We welcome contributions from the community. Whether it's reporting a bug, sugge
 ## Deploy on Vercel
 
 The project is deployed on the [Vercel Platform](https://vercel.com).
-The live link is [Simple-Blog-Website](https://simple-blog-application-orpin.vercel.app/home).
+The live link is [Static Login and Email sender](https://secure-login-eight.vercel.app/) project
 
 ## Contact
 

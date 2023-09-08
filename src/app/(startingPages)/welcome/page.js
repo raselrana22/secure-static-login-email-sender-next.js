@@ -14,9 +14,11 @@ export default function Welcome() {
                         Log In
                     </button>
                 </Link>
-                <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
-                    Sign Up
-                </button>
+                <Link href={'/signup'}>
+                    <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+                        Sign Up
+                    </button>
+                </Link>
             </div>
         </div>
     );

@@ -16,6 +16,11 @@ export async function middleware(request) {
     // } catch (error) {
     //     console.log(error);
     // }
+
+    /* When I attempted to use a try and catch block to check the 
+     destination path and verified that it was working correctly locally,
+     I encountered issues when deploying to Vercel.As a result,
+    I had to comment out this code.*/
     return NextResponse.next();
 }
 
