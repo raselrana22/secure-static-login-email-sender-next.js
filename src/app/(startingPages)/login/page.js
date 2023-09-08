@@ -36,7 +36,7 @@ export default function Login() {
             const jsonResponse = await response.json();
             if (jsonResponse.status === 'success') {
                 const token = jsonResponse.tokenValue;
-                emailSend(email, token);
+                // emailSend(email, token);
                 alert("Login success");
                 router.replace('/home') // Go to the user home page
             } else {
