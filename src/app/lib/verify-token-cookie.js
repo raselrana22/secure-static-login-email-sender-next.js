@@ -5,13 +5,7 @@ export async function verifyTokenCookie(request) {
     try {
         const token = request.cookies.get('token');
         const payload = await verifyToken(token['value']);
-
-        const requestHeaders = new Headers(request.headers);
-        requestHeaders.set('email', payload['email']);
-
-        return NextResponse.next({
-            request: { headers: requestHeaders },
-        })
+        return payload;
     }
     catch (e) {
         return NextResponse.redirect(new URL('/login', request.url))

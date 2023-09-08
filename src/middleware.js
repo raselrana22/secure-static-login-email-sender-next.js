@@ -7,12 +7,18 @@ export async function middleware(request) {
         // for my code simplicity add header in verifyTokenCookie function
         const verified = await verifyTokenCookie(request);
 
-        if (verified.ok) {
-            return NextResponse.next();
+        if (payload) {
+            const requestHeaders = new Headers(request.headers)
+            requestHeaders.set('email', payload['email'])
+
+            return NextResponse.next({
+                request: {
+                    headers: requestHeaders,
+                },
+            })
         } else {
             return NextResponse.redirect(new URL('/login', request.url))
         }
-
     } catch (error) {
         console.log(error);
     }
