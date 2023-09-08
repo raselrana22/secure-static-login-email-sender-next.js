@@ -18,6 +18,7 @@ export async function middleware(request) {
     }
 }
 
+// The destination path after login
 export const config = {
     matcher: ['/home/:path*', '/profile/:path*', '/contact/:path*', '/about/:path*', '/logout/:path*'],
 }
