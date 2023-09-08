@@ -76,7 +76,6 @@ export default function Login() {
         }
     }
 
-
     return (
         <div className='w-full h-screen'>
             <div className="min-h-screen flex items-center justify-center bg-slate-300">
