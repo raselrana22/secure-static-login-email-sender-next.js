@@ -4,6 +4,7 @@ import { verifyTokenCookie } from "./app/lib/verify-token-cookie";
 export async function middleware(request) {
     try {
         // Verify the token cookie
+        // for code simplicity I add a new header in the verifyTokenCookie function
         const verified = await verifyTokenCookie(request);
 
         if (verified.ok) {
