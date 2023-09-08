@@ -42,7 +42,7 @@ The project structure for Tech Education is designed to maintain a clean and org
 - **`src/`**: The main source folder of the project.
 
   - **`middleware/`**: Contains middleware files responsible for handling requests and responses.
-  - **`app.js`**: The main application file responsible for setting up routes, middleware, and server configuration.
+  - **`app/`**: The main application file responsible for setting up routes, middleware, and server configuration.
 
 - **`app/`**: Contains JavaScript (`.js`) and JSX (`.jsx`) files related to your application's frontend.
   - **`pages/`**: Organized into two groups: `before-login` and `after-login`.
