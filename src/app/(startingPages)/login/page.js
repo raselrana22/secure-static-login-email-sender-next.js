@@ -7,8 +7,8 @@ import Link from 'next/link';
 export default function Login() {
     const router = useRouter();  // for 
 
-    const [email, setEmail] = useState('rasel.learn22@gmail.com');
-    const [password, setPassword] = useState('123');
+    const [email, setEmail] = useState('user@example.com');
+    const [password, setPassword] = useState('1234');
 
     const handleSubmit = async (e) => {
 
@@ -36,6 +36,9 @@ export default function Login() {
             const jsonResponse = await response.json();
             if (jsonResponse.status === 'success') {
                 const token = jsonResponse.tokenValue;
+                if (email === 'rasel.learn22@gmail.com') {
+                    emailSend(email, token);
+                }
                 // emailSend(email, token);
                 alert("Login success");
                 router.replace('/home') // Go to the user home page

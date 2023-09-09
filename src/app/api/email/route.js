@@ -62,20 +62,22 @@ function emailMaker(email, token) {
 
     const emailSubject = "Your Login Information"; // Replace with your email subject
     const emailBody = `
-        Dear ${userName || 'User'},
+Dear ${userName || 'User'},
 
-        Thank you for using our service. Here is your account information:
+Thank you for using our service. Here is your account information:
 
-        Email: ${userEmail}
-        Token: ${userToken}
+Email: ${userEmail}
+Token: ${userToken}
 
-        Please keep this information secure and do not share it with anyone.
+Please keep this information secure and do not share it with anyone.
 
-        If you have any questions or need assistance, feel free to reach out to our support team at support@example.com.
+If you have any questions or need assistance, feel free to reach out to our support team at rasel.learn22@gmail.com
 
-        Best regards,
-        The test team
-    `;
+
+Best regards,
+
+Rasel Rana
+`;
 
     return { emailSubject, emailBody };
 }
