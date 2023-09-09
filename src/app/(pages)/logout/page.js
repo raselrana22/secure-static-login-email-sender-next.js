@@ -22,10 +22,9 @@ export default function LogoutConfirmation() {
         router.replace('/home');
     };
 
-
     return (
-        <div className="w-full h-screen">
-            <div className="min-h-screen flex items-center justify-center bg-slate-300">
+        <div className="w-full md:h-screen flex items-center justify-center bg-slate-300">
+            <div className="lg:w-1/2 p-4">
                 <div className="bg-white p-8 shadow-md rounded-lg">
                     <h2 className="text-2xl font-semibold mb-4">Logout Confirmation</h2>
                     <p className="text-gray-700 mb-4">

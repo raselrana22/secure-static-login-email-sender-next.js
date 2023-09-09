@@ -1,16 +1,16 @@
 export default function Contact() {
     return (
-        <div className='flex content-center'>
-            <main className="container mx-auto py-8">
-                <div className='w-3/2'>
-                    <h1 className="text-4xl font-semibold mb-4">Contact Us</h1>
-                    <p className="text-gray-600 mb-6">
+        <div className='bg-slate-300 flex items-center'>
+            <div className="w-full md:w-2/3 lg:w-1/2 p-4 shadow-lg mx-auto py-8">
+                <div className='w-full rounded-t-lg p-4 bg-rose-100'>
+                    <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold mb-4">Contact Us</h1>
+                    <p className="text-gray-600 mb-4">
                         {`If you have any questions or need assistance, please don't hesitate to contact us. We are here to help!`}
                     </p>
                 </div>
 
-                <div className="w-2/3 bg-slate-300 p-8 rounded-lg shadow-md">
-                    <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
+                <div className="w-full bg-rose-100 p-4 rounded-b-lg shadow-md">
+                    <h2 className="text-lg md:text-2xl font-semibold mb-2">Get in Touch</h2>
 
                     <form>
                         <div className="mb-4">
@@ -54,7 +54,7 @@ export default function Contact() {
                         </button>
                     </form>
                 </div>
-            </main>
+            </div>
         </div>
     );
 }
