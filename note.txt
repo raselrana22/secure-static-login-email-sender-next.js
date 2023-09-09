@@ -1,0 +1,8 @@
+"This assignment is part of Module 14 for the course 'Mastering React JS, Next JS & Prisma' by Ostad.
+
+The project's live link is: https://secure-login-eight.vercel.app/"
+for login
+
+
+Email: user@example.com
+Password: 1234
