@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className='navbar bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
+    <div className='navbar flex flex-row bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
       <div className='flex-1'>
         <Link href={"/home"}>
           <p className='pl-5 text-xl'>Tech. Education</p>

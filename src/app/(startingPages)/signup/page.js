@@ -13,8 +13,8 @@ export default function Signup() {
     };
 
     return (
-        <div className='w-full h-screen'>
-            <div className="min-h-screen flex items-center justify-center bg-slate-300">
+        <div className='w-full h-screen  bg-slate-300'>
+            <div className='flex items-center justify-center pt-10'>
                 <div className="bg-white p-8 shadow-md rounded-lg">
                     <h2 className="text-2xl font-semibold mb-4">Sign Up</h2>
                     <form onSubmit={handleSubmit}>

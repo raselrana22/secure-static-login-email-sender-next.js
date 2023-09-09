@@ -8,9 +8,9 @@ export default function Notice() {
             <p className="text-gray-600 mb-6">
                 To access our website, please log in or create an account.
             </p>
-            <div className="flex justify-center mb-4">
+            <div className="flex flex-col md:flex-row justify-center mb-4">
                 <Link href="/login">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mr-2">
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-3 mr-3">
                         Log In
                     </button>
                 </Link>
