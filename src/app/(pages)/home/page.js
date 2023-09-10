@@ -8,9 +8,9 @@ export default function MyHome() {
     return (
         <div className="bg-slate-300">
             <div className="container mx-auto py-8">
-                <h1 className='font-semibold text-center mb-8 first-letter
+                <h1 className='font-semibold text-black text-center mb-8 first-letter
                 text-xl md:text-2xl lg:text-4xl'>Explore Our Courses</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid mx-4 sm:mx-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {courses.map((course) => (
                         <div key={course.id} className="bg-white p-4 rounded-lg shadow-md transition duration-300 transform hover:scale-105 hover:shadow-lg
                         flex flex-col items-center text-center">

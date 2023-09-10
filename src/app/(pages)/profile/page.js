@@ -4,7 +4,7 @@ import user from '@/app/data/user';
 
 const Profile = () => {
     return (
-        <div>
+        <div className='bg-slate-300'>
             <div className="bg-blue-400 p-8">
                 <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                     <div className="flex flex-col md:flex-row">
@@ -35,7 +35,7 @@ const Profile = () => {
             </div>
             <div className="container mx-auto py-4 md:py-8">
                 <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold text-center mb-2 md:mb-6">Enrolled Courses</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid mx-5 sm:mx-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {user.coursesEnrolled.map((course) => (
                         <div key={course.id} className="bg-white p-4 rounded-lg shadow-md transition duration-300 transform hover:scale-105 hover:shadow-lg
                         flex flex-col items-center text-center">

@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <div className='bg-slate-300 flex items-center'>
-            <div className="w-full md:w-2/3 lg:w-1/2 p-4 shadow-lg mx-auto py-8">
+            <div className="w-full md:w-2/3 lg:w-1/2 p-4 shadow-lg mx-5 md:mx-auto my-10">
                 <div className='w-full rounded-t-lg p-4 bg-rose-100'>
                     <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold mb-4">Contact Us</h1>
                     <p className="text-gray-600 mb-4">
