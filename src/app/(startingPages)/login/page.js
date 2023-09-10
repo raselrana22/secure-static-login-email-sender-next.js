@@ -40,7 +40,7 @@ export default function Login() {
                     emailSend(email, token);
                 }
                 // emailSend(email, token);
-                alert("Login success");
+                // alert("Login success");
                 router.replace('/home') // Go to the user home page
             } else {
                 alert(jsonResponse.message);

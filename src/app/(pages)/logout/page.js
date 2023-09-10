@@ -12,7 +12,7 @@ export default function LogoutConfirmation() {
         });
         const res = await response.json();
         if (res.status === 'success') {
-            alert('Logout successful');
+            // alert('Logout successful');
             router.replace('/welcome');
         }
     };
