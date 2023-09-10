@@ -6,7 +6,7 @@ export async function middleware(request) {
         // Verify the token cookie
         // add the header in verifyTokenCookie function
         const verified = await verifyTokenCookie(request);
-
+        alert('verify:', verified);
         if (verified.ok) {
             return NextResponse.next();
         } else {
@@ -15,6 +15,7 @@ export async function middleware(request) {
 
     } catch (error) {
         console.log(error);
+        alert('error:', error);
     }
 
     /* When I attempted to use a try and catch block to check the 
