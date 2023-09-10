@@ -6,7 +6,7 @@ import courses from '@/app/data/course';
 
 export default function MyHome() {
     return (
-        <div className="bg-gray-100">
+        <div className="bg-slate-300">
             <div className="container mx-auto py-8">
                 <h1 className='font-semibold text-center mb-8 first-letter
                 text-xl md:text-2xl lg:text-4xl'>Explore Our Courses</h1>
@@ -23,7 +23,7 @@ export default function MyHome() {
                                 blurDataURL={`data: image/jpg, ${placeHolderImageData}`}
                             />
                             <h2 className="text-xl font-semibold">{course.title}</h2>
-                            <p className="text-gray-600">Instructor: {course.instructor}</p>
+                            <p className="text-black">Instructor: {course.instructor}</p>
                         </div>
                     ))}
                 </div>

@@ -81,7 +81,7 @@ export default function Login() {
 
 
     return (
-        <div className='w-full h-screen bg-slate-300'>
+        <div className='w-full h-auto pb-10 landscape:h-auto landscape:pb-10 bg-slate-300'>
             <div className="flex items-center justify-center pt-10">
                 <div className="bg-white p-8 shadow-md rounded-lg">
                     <h2 className="text-2xl font-semibold mb-4">Login</h2>
