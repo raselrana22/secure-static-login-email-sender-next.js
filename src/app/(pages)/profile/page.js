@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import user from '@/app/data/user';
+import placeHolderImageData from '@/app/utils/placeholder-image';
 
 const Profile = () => {
     return (
@@ -14,7 +15,9 @@ const Profile = () => {
                                 alt={`${user.name}'s profile`}
                                 width={500}
                                 height={500}
-
+                                priority={true}
+                                placeholder='blur'
+                                blurDataURL={placeHolderImageData}
                             />
                         </div>
                         <div className="p-4">
@@ -44,6 +47,8 @@ const Profile = () => {
                                 alt={course.title}
                                 width={500}
                                 height={500}
+                                placeholder='blur'
+                                blurDataURL={placeHolderImageData}
                             />
                             <h2 className="text-xl font-semibold">{course.title}</h2>
                             <p className="text-gray-600">Instructor: {course.instructor}</p>

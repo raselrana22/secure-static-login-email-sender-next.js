@@ -20,7 +20,7 @@ export default function MyHome() {
                                 width={500}
                                 height={500}
                                 placeholder='blur'
-                                blurDataURL={`data: image/jpg, ${placeHolderImageData}`}
+                                blurDataURL={placeHolderImageData}
                             />
                             <h2 className="text-xl font-semibold">{course.title}</h2>
                             <p className="text-black">Instructor: {course.instructor}</p>
